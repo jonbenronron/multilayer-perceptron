@@ -26,6 +26,7 @@ fn weight_sum(w: Weight, x: Data) -> f64 {
     sum
 }
 
+// y = sigmoid(o) = 1 / (1 + exp(-W^T*x))
 fn sigmoid(o: f64) -> f64 {
     1. / (1. + ((-1.) * o).exp())
 }
